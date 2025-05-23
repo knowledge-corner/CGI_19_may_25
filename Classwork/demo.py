@@ -27,6 +27,3 @@
 #     paper_bgcolor='whitesmoke'
 # )
 # fig.show()
-
-import nbformat
-print(nbformat.__version__)

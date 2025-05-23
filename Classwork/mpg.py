@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("auto-mpg.csv")
+df = pd.read_csv("./datasets/auto-mpg.csv")
 df = df.loc[df.horsepower.str.isdigit()]
 df.horsepower = df.horsepower.astype(int)
 df.origin = df.origin.map({1 : "USA", 2 : "Germany", 3 : "Japan"})
